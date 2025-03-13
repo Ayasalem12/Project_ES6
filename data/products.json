@@ -1,0 +1,131 @@
+[
+    {
+        "id": 1,
+        "name":" LD01 CHAIR",
+        "category":"furniture",
+        "price": 200,
+        "image": "../images/1.png"
+    },
+    {
+        "id": 2,
+        "name":" LD02 CHAIR",
+        "category":"furniture",
+        "price": 250,
+        "image": "../images/2.png"
+    },
+    {
+        "id": 3,
+        "name":" LD03 CHAIR",
+        "category":"furniture",
+        "price": 290,
+        "image": "../images/3.png"
+    },
+    {
+        "id": 4,
+        "name":" LD04 CHAIR",
+        "category":"furniture",
+        "price": 200,
+        "image": "../images/4.png"
+    },
+    {
+        "id": 5,
+        "name":" LD05 CHAIR",
+        "category":"furniture",
+        "price": 300,
+        "image": "../images/5.png"
+    },
+    {
+        "id": 6,
+        "name":" LD06 CHAIR",
+        "category":"furniture",
+        "price": 200,
+        "image": "../images/6.png"
+    },
+    {
+        "id": 7,
+        "name":" LD07 CHAIR",
+        "category":"furniture",
+        "price": 200,
+        "image": "../images/7.png"
+    },
+    {
+        "id": 8,
+        "name":" LD08 CHAIR",
+        "category":"furniture",
+        "price": 200,
+        "image": "../images/8.png"
+    }
+    ,
+    {
+        "id": 9,
+        "name":"LD01 CLOTHES",
+        "category":"clothes",
+        "price": 200,
+        "image": "../images/offer4 (1).png"
+    }
+    ,
+    {
+        "id": 10,
+        "name":" LD02 CLOTHES",
+        "category":"clothes",
+        "price": 200,
+        "image": "../images/offer4 (2).png"
+    }
+    ,
+    {
+        "id": 11,
+        "name":"LD03 CLOTHES",
+        "category":"clothes",
+        "price": 200,
+        "image": "../images/offer4 (3).png"
+    }
+    ,
+    {
+        "id": 12,
+        "name":"LD04 CLOTHES",
+        "category":"clothes",
+        "price": 200,
+        "image": "../images/offer4 (4).png"
+    }
+    ,
+    {
+        "id": 13,
+        "name":"LD01 SHOES",
+        "category":"shoes",
+        "price": 200,
+        "image": "../images/shoes1.webp"
+    }
+    ,
+    {
+        "id": 14,
+        "name":"LD02 SHOES",
+        "category":"shoes",
+        "price": 200,
+        "image": "../images/shoes2.webp"
+    }
+    ,
+    {
+        "id": 12,
+        "name":"LD03 SHOES",
+        "category":"shoes",
+        "price": 200,
+        "image": "../images/shoes3.webp"
+    }
+    ,
+    {
+        "id": 12,
+        "name":"LD04 SHOES",
+        "category":"shoes",
+        "price": 200,
+        "image": "../images/shoes4.avif"
+    }
+    ,
+    {
+        "id": 12,
+        "name":"LD05 SHOES",
+        "category":"shoes",
+        "price": 200,
+        "image": "../images/shoes5.avif"
+    }
+
+]

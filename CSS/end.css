@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.thank-you-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.thank-you-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Confetti Animation */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6b6b;
+    top: -10%;
+    animation: confetti-fall 5s linear infinite;
+}
+
+.confetti:nth-child(2n) {
+    background-color: #4ecdc4;
+}
+
+.confetti:nth-child(3n) {
+    background-color: #ffe66d;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+
+/* Thank You Heading */
+.thank-you-heading {
+    font-size: 4rem;
+    color: #d1b6aa;
+    margin-bottom: 20px;
+    animation: zoomIn 1s ease-in-out;
+    /* transition: color 0.3s ease, transform 0.3s ease; */
+}
+
+.thank-you-heading:hover {
+    color: #d1b6aa;
+    /* transform: rotate(5deg); */
+}
+
+/* Thank You Message */
+.thank-you-message {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    /* animation: slideUp 1s ease-in-out; */
+    transition: transform 0.3s ease;
+}
+
+.thank-you-message:hover {
+    /* transform: scale(1.05) rotate(-2deg); */
+}
+
+.thank-you-submessage {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    /* animation: slideUp 1.2s ease-in-out; */
+    /* transition: color 0.3s ease, transform 0.3s ease; */
+}
+
+.thank-you-submessage:hover {
+    color: #333;
+    /* transform: rotate(2deg); */
+}
+
+/* Return Home Button */
+.return-home-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #d1b6aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    /* transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; */
+    /* animation: fadeInUp 1.5s ease-in-out; */
+}
+
+.return-home-btn:hover {
+    background-color: #d1b6aa;
+    /* transform: translateY(-3px) rotate(5deg); */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Background Animation */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    animation: pulse 3s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Funny Emoji Animation */
+.thank-you-heading::after {
+    content: '🎊';
+    display: inline-block;
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

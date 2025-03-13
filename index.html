@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>E-Commerce</title>
+</head>
+<body>
+    <!-- =================== Header ==================== -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="./index.html" class="nav-logo">
+                <!-- <i class='bx bxs-store' ></i> -->
+                <i class='bx bxs-store bx-spin bx-flip-horizontal' ></i>
+                e-shop
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link ">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cart" class="nav-link " id="cartshow">Cart</a>
+                        <!-- <a href="./Pages/cart.html" class="nav-link " id="cartshow">Cart</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link ">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link ">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-btns">
+                <div class="login-toggle">
+                    <!-- <a href="./Forms/login.html"  ><i class='bx bx-log-out-circle'><span></span></i></a> -->
+                    <a href="./Forms/login.html"  alt="LogOut"><i class='bx bx-log-out-circle bx-tada' ></i></a>
+                </div>
+                <div class="nav-shop">
+                    <i class='bx bxl-shopify'>
+                        <span>0</span>
+                    </i>
+                    
+                </div>
+                <div class="nav-toggle">
+                    <i class='bx bx-grid' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ============== Slider ================ -->
+    <section class="d-flex justify-content-center mt-5">
+        <div class="slider mt-5" style="max-width: 1300px;height:600px; overflow: hidden;">
+            <div class="img-box d-flex" style="width: 100%; position: relative;">
+                <img class="slides_image" style="width: 100%; height: 100%; object-fit: cover;" src="./images/bg-1.webp" alt="Slide 1">
+                <img class="slides_image" style="width: 100%; height: 100%; object-fit: cover;" src="./images/bg-4.jpeg" alt="Slide 2">
+                <img class="slides_image" style="width: 100%; height: 100%; object-fit: cover;" src="./images/bg-5.jpeg" alt="Slide 3">
+            </div>
+            <div class="dots-container d-flex justify-content-center mt-3">
+                <span class="dot active mx-1" onclick="currentSlide(0)"></span>
+                <span class="dot mx-1" onclick="currentSlide(1)"></span>
+                <span class="dot mx-1" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+    <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner w-75 m-auto">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./images/bg-1.webp" class="d-block w-100" style="height: 700px; object-fit: cover;" alt="Slide 1">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/bg-4.jpeg" class="d-block w-100" style="height: 700px; object-fit: cover;" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/bg-5.jpeg" class="d-block w-100" style="height: 700px; object-fit: cover;" alt="Slide 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" style="left: -50px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" style="right: -50px;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    
+    
+    
+    
+    <!--=============== Products ===============-->
+    
+    <div class="container-main mb-5" id="products">
+        <h2 class="product-header">Our Products</h2>
+        <div class="btns">
+            <button type="button" value="all" class="filter-btn" id="all">All</button>
+            <button type="button" value="clothes" class="filter-btn" id="clothes">Clothes</button>
+            <button type="button" value="shoes" class="filter-btn" id="shoes">Shoes</button>
+            <button type="button" value="furniture" class="filter-btn" id="furniture">Furniture</button>
+        </div>
+        <div class="listProduct">
+            
+           
+        </div>
+        <div class="more"></div>
+    </div>
+    
+    <!--=============== CART ===============-->
+    
+    <div class="cartPage">
+        <h1 class="title">Shopping Cart</h1>
+        <div class="cart-list"></div>
+        <div class="total-section">
+            
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut" ><a href="./Pages/endPage.html">Check Out</a></button>
+        </div>
+    </div>
+    <!--=============== About ===============-->
+    <section class="about" id="about">
+        <section class="about-img">
+          <img src="./images/img-2.avif" alt="">
+        </section>
+        <section class="about-content">
+          <section class="about-cap">
+            <h2>
+              About our <br>
+              Website e-Shop</h2>
+              <p class="first-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              <p class="second-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+              <button>more about us</button>
+          </section>
+        </section>
+      </section>
+    
+      <!--=============== Services ===============-->
+    <section class="service" id="services">
+        <section class="service-header ">
+        <h2>Why use our service?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed ab optio vel repudiandae architecto.</p>
+        </section>
+        <section class="main-content">
+            <section class="service">
+                <i class='bx bxs-window-alt' ></i>
+                <h3>Tailor Sweing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in</p>
+            </section>
+            <section class="service">
+                <i class='bx bx-windows'></i>
+                <h3>Tailor Sweing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in</p>
+            </section>
+            <section class="service">
+                <i class='bx bx-eraser'></i>
+                <h3>Tailor Sweing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in</p>
+            </section>
+            <section class="service">
+                <i class='bx bx-server'></i>
+                <h3>Tailor Sweing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in</p>
+            </section>
+            
+        </section>
+        
+</section>
+    
+    <!-- ============== Contact Us =========== -->
+    
+    <section class="contact-section m-5 rounded overflow-hidden" id="contact" style="background-color:#fff;">
+        <div class="row g-3 align-items-stretch" style="min-height: 500px;">
+            <!-- Left: Image -->
+            <div class="col-md-6">
+                <img src="/images/img-2.avif" alt="Contact Us" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 100%;">
+            </div>
+    
+            <!-- Right: Contact Form -->
+            <div class="col-md-6 d-flex align-items-center p-5 bg-white">
+                <div class="w-100">
+                    <h3 class="mb-4 " style="color:#d1b6aa;">Get in Touch</h3>
+                    <p class="fs-5">Contact us and we'll get back to you within 24 hours.</p>
+    
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <label for="query" class="form-label">Message</label>
+                            <textarea class="form-control" id="query" rows="4" placeholder="Write your message"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn px-4 fw-bold" style="background-color:#d1b6aa; color:#fff;">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <!--=============== FOOTER ===============-->
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center mt-5">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1 " style="color:#b89384;" href="#!" role="button"
+          ><i class='bx bxl-facebook-circle fs-2'></i></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1 " style="color:#b89384;" href="#!" role="button"
+          ><i class='bx bxl-twitter fs-2' ></i></i
+        ></a>
+  
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" style="color:#b89384;" href="#!" role="button"
+          ><i class='bx bxl-google fs-2 ' ></i></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" style="color:#b89384;" href="#!" role="button"
+          ><i class='bx bxl-instagram-alt fs-2' ></i></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" style="color:#b89384;" href="#!" role="button"
+          ><i class='bx bxl-linkedin-square fs-2' ></i></i
+        ></a>
+  
+        <!-- Github -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" style="color:#b89384;" href="#!" role="button"
+          ><i class='bx bxl-github fs-2' ></i></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2 " style="color:#b89384;">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form5Example24" class="form-control" />
+                <label class="form-label text-dark-emphasis " for="form5Example24">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4 " style="color:#b89384;">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p class="text-dark-emphasis">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+          harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase  " style="color:#b89384;">About Us</h5>
+  
+            <ul class="list-unstyled mb-2">
+                <li>
+                  <a class="text-body text-decoration-none text-dark-emphasis "  href="#!">Newsroom</a>
+                </li>
+                <li>
+                  <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Blog</a>
+                </li>
+                <li>
+                  <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Gift Cards</a>
+                </li>
+                <li>
+                  <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Career</a>
+                </li>
+              </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase " style="color:#b89384;">Proudcts</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="text-body text-decoration-none text-dark-emphasis" style="color:#b5b5bd;" href="#!">Newsroom</a>
+              </li>
+              <li>
+                <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Blog</a>
+              </li>
+              <li>
+                <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Gift Cards</a>
+              </li>
+              <li>
+                <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Career</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase " style="color:#b89384;">Offering</h5>
+  
+            <ul class="list-unstyled mb-0">
+                <li>
+                  <a class="text-body text-decoration-none text-dark-emphasis" style="color:#b5b5bd;" href="#!">Newsroom</a>
+                </li>
+                <li>
+                  <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Blog</a>
+                </li>
+                <li>
+                  <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Gift Cards</a>
+                </li>
+                <li>
+                  <a class="text-body text-decoration-none text-dark-emphasis" href="#!">Career</a>
+                </li>
+              </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #b89384;color:#fff">
+      © 2025 Copyright❤:
+      <a class="text-reset fw-bold" href="./index.html">This template is made with love ❤</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+  <!-- Footer -->
+
+    <!--=============== SCROLL UP ===============-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bxs-up-arrow-alt bx-tada' ></i></button>
+    <!--=============== STYLE SWITCHER ===============-->
+    
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="/JS/main.js"></script>
+    
+</body>
+</html>

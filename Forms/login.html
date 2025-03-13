@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" >
+            <div class="input-group">
+                <label for="loginemail">Email</label>
+                <input type="email" id="loginemail" name="loginemail" placeholder="Enter your email">
+                <div id="emailValid" style="color: red; display: none;"></div>
+            </div>
+            
+            <div class="input-group">
+                <label for="loginpassword">Password</label>
+                <input type="password" id="loginpassword" name="loginpassword" placeholder="Enter your password">
+                <div id="passwordValid" style="color: red; display: none;"></div>
+            </div>
+            <div id="undefindUser" style="color: red; display: none;"></div>
+            <button type="submit" class="login-btn" name="submit" value="login">Login</button>
+
+        </form>
+    </div>
+    <script src="../JS/athu.js"></scriptsrc>
+</body>
+</html>
